@@ -29,14 +29,14 @@ Imp: First make group in inventory with tag as lb and webserver. Then play this 
 ---
 > Inventory:
 
-> [lb]
-> Ip0 ... ... ...
+> [lb]</br>
+> Ip0 ... ... ...</br>
 
-> [webserver]
-> ip0 ...  ... ....
-> ip1 ... ... ...
-> ip2 ... ... ...
-> ip3 ... ... ..
+> [webserver]</br>
+> ip0 ...  ... ....</br>
+> ip1 ... ... ...</br>
+> ip2 ... ... ...</br>
+> ip3 ... ... ..</br>
 
 ...
 
