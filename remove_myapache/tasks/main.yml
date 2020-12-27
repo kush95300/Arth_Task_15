@@ -1,0 +1,11 @@
+---
+# tasks file for remove_myapache
+
+- name: "Uninstall Packages"
+  package:
+          name: "{{ software }}"
+          state: absent
+- name: "Delete Webpages"
+  file:
+          state: absent
+          path: "/var/www" 

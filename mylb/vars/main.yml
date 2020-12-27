@@ -1,0 +1,7 @@
+---
+# vars file for mylb
+#
+#
+lb_port: '9090'
+service: 'haproxy'
+software: 'haproxy'

@@ -1,0 +1,9 @@
+---
+- name: "Delete Loadbalancer Infrastructure Setup"
+  hosts: lb
+  roles:
+          - role: 'remove_mylb'
+- name: 'Delete webserver'
+  hosts: webserver
+  roles:
+          - role: 'remove_myapache'

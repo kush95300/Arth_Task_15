@@ -1,0 +1,9 @@
+---
+- name: "Loadbalancer Infrastructure Setup"
+  hosts: lb
+  roles:
+          - role: 'mylb'
+- name: 'webserver'
+  hosts: webserver
+  roles:
+          - role: 'myapache'

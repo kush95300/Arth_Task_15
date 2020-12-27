@@ -1,0 +1,8 @@
+---
+# vars file for myapache
+
+software: 
+  - 'httpd'
+  - 'php'
+service: 'httpd'
+Developer: 'Kaushal Soni'

@@ -1,0 +1,15 @@
+---
+# tasks file for mylb
+
+- name: "Install Package"
+  package:
+          name: "{{ software }}"
+- name: "Configuration"
+  template:
+          dest: "/etc/haproxy"
+          src: "haproxy.cfg"
+  notify: "Restart {{ service }}"
+- name: "Start service"
+  service:
+          name: "{{ service }}"
+          state: started

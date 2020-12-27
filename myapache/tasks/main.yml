@@ -1,0 +1,15 @@
+---
+# tasks file for myapache
+
+- name: "Install Packages"
+  package:
+          name: "{{ software }}"
+          state: present
+- name: "Copy Webpages"
+  template:
+          dest: /var/www/html/
+          src: index.php
+- name: "Start Web Service"
+  service:
+          name: '{{ service }}'
+          state: started
